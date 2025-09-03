@@ -10,6 +10,7 @@ RUN \
     rm -rf /usr/share/locale
 
 COPY tor/torrc /etc/tor/torrc
+COPY onion_web_service /srv/onion_web_service/
 COPY default.conf.template /etc/nginx/conf.d/default.conf
 COPY nginx.conf /etc/nginx/nginx.conf
 COPY static-html /usr/share/nginx/html
